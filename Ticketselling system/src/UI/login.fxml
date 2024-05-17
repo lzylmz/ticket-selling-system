@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #F5FFFA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Login">
+    <children>
+        <Pane layoutY="-2.0" prefHeight="400.0" />
+        <Label contentDisplay="CENTER" graphicTextGap="10.0" layoutX="220.0" layoutY="9.0" prefHeight="100.0" prefWidth="600.0" text="Welcome To TheCheapestTicket.com " textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Elephant" size="28.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="1.0" focusDistance="1.0" radius="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.9770114942528734" />
+                        <Stop color="BLACK" offset="0.9793814432989679" />
+                        <Stop color="BLACK" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <TextField fx:id="eMail" layoutX="357.0" layoutY="371.0" prefHeight="36.0" prefWidth="216.0" promptText="E-mail">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="password" layoutX="357.0" layoutY="427.0" prefHeight="36.0" prefWidth="216.0" promptText="Password" />
+        <Button fx:id="btn" contentDisplay="BOTTOM" layoutX="435.0" layoutY="487.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="25.0" prefWidth="60.0" text="Login" textFill="#6f6262" textOverrun="LEADING_WORD_ELLIPSIS">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="312.0" fitWidth="474.0" layoutX="249.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@aeroplane-plane.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

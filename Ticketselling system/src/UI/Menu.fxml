@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0000FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Menu">
+   <children>
+      <Pane layoutX="248.0" prefHeight="600.0" prefWidth="448.0" style="-fx-background-color: #00BFFF;">
+         <children>
+            <Button fx:id="showMyTicket" layoutX="-1.0" mnemonicParsing="false" onAction="#showClick" prefHeight="180.0" prefWidth="448.0" style="-fx-background-color: #00BFFF;" text="SHOW MY TİCKET">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="buyticket" layoutY="178.0" mnemonicParsing="false" onAction="#buyticket" prefHeight="190.0" prefWidth="448.0" style="-fx-background-color: #00BFFF;" text="BUY TİCKET">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="wallet" layoutX="3.0" layoutY="368.0" mnemonicParsing="false" onAction="#mywallet" prefHeight="236.0" prefWidth="448.0" style="-fx-background-color: #00BFFF;" text="MY WALLET">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
